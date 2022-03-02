@@ -1,0 +1,707 @@
+<!Doctype html>
+<html lang="en">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+
+.nav {
+    background-color: white;
+    z-index: 9;
+    padding: 0 60px;
+    display: flex;
+    box-shadow: 0px 3px 65px 0px rgba(0, 0, 0, 0.15);
+}
+.nav_top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.logo {
+    float: left;
+    width: 60%;
+}
+.logo img {
+    padding: 10px;
+}
+.nav_side {
+    float: right;
+    width: 40%;
+    padding-top: 20px;
+}
+.nav_side a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: black;
+    font-weight: bold;
+    font-family: cosmic, sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.nav_side a:hover {
+    color: orange;
+    transition: all 1s ease;
+}
+
+/* Top content */
+
+.main {
+    background: url(../assets/images/background.jpg) no-repeat fixed center;
+    background-size: cover;
+    height: 80vh;
+}
+.main .main_content {
+    padding-top: 15%;
+    margin: 0 10%;
+    text-align: center;
+}
+.main .main_content h2 {
+    color: white;
+    font-size: 50px;
+    font-family: cosmic, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 25px;
+}
+.main .main_content h2 span {
+    font-size: 15px;
+    color: #ff5722;
+    font-weight: 900;
+    line-height: 20px;
+}
+.main .main_content .btn {
+    text-align: center;
+    margin-top: 50px;
+}
+.main .main_content .btn a {
+    text-decoration: none;
+    margin: 50px;
+    padding: 10px 20px;
+    background-color: #4a148c;
+    color: white;
+    font-family: cosmic, sans-serif;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.main .main_content .btn a:hover {
+    background-color: black;
+    color: orange;
+    border: none;
+    border-bottom: 4px solid orange;
+    transition: all 0.5s;
+}
+
+/* Product Section */
+
+.product {
+    padding-bottom: 50px;
+}
+.product h2 {
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+}
+.product .product_container {
+    display: flex;
+    margin: 0 5%;
+    height: 50vh;
+}
+.product .product_container .item {
+    width: 33.33%;
+    margin: 10px;
+    height: auto;
+}
+.product .product_container .item:hover {
+    box-shadow: 0px 3px 65px 0px rgba(0, 0, 0, 0.15);
+}
+.product .product_container .item .item_img {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+.product .product_container .item .item_img img {
+    height: 300px;
+    width: 100%;
+}
+.product .product_container .item .item_content {
+    text-align: center;
+}
+.product .product_container .item .item_content h3 {
+    padding: 10px;
+    font-size: 25px;
+    font-family: cosmic, sans-serif;
+}
+.product .product_container .item .item_content p {
+    padding: 10px;
+    font-size: 15px;
+    font-family: cosmic, sans-serif;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.product .product_container .item .item_content a {
+    text-decoration: none;
+    margin: 50px;
+    padding: 10px 20px;
+    background-color: #4a148c;
+    color: white;
+    font-family: cosmic, sans-serif;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.product .product_container .item .item_content a:hover {
+    background-color: black;
+    color: orange;
+    border: none;
+    border-bottom: 4px solid orange;
+    transition: all 0.5s;
+}
+.product .product_btn {
+    text-align: center;
+    margin-top: 50px;
+}
+.product .product_btn a {
+    text-decoration: none;
+    margin: 50px;
+    padding: 10px 20px;
+    background-color: #4a148c;
+    color: white;
+    font-family: cosmic, sans-serif;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.product .product_btn a:hover {
+    background-color: black;
+    color: orange;
+    border: none;
+    border-bottom: 4px solid orange;
+    transition: all 0.5s;
+}
+
+/* Keypoint Section */
+
+.keypoint {
+    padding: 50px;
+}
+.keypoint h2 {
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+}
+.keypoint .key_container {
+    display: flex;
+}
+.keypoint .key_container .key_content {
+    width: 40%;
+    padding: 20px;
+    float: left;
+    margin-left: 10%;
+}
+.keypoint .key_container .key_content li {
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    border-left: 2px solid orange;
+    color: black;
+    text-align: left;
+    font-family: cosmic, sans-serif;
+    box-shadow: 0px 3px 65px 0px rgba(0, 0, 0, 0.15);
+}
+.keypoint .key_container .key_img {
+    width: 40%;
+    text-align: center;
+}
+.testi {
+    padding: 50px;
+}
+.testi h2 {
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.testi .testi_container {
+    margin: 0 10%;
+    text-align: center;
+}
+.testi .testi_container .carousel-inner {
+    background-color: white;
+    box-shadow: none;
+}
+.testi .testi_container .item {
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: none;
+}
+.testi .testi_container .item .item_img {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    overflow: hidden;
+}
+.testi .testi_container .item .item_img img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.testi .testi_container .item .item_content {
+    text-align: center;
+}
+.testi .testi_container .item .item_content h3 {
+    padding: 10px;
+    font-size: 25px;
+    font-family: cosmic, sans-serif;
+}
+.testi .testi_container .item .item_content p {
+    padding: 10px;
+    font-size: 15px;
+    font-family: cosmic, sans-serif;
+}
+
+/* Team Section */
+
+.team {
+    padding: 50px;
+}
+.team h2 {
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.team .team_container {
+    display: flex;
+    justify-content: center;
+}
+.team .team_container .team_video {
+    width: 40%;
+    padding-top: 20px;
+}
+.team .team_container .team_video video {
+    width: 80%;
+    border: 10px solid orange;
+    outline: none;
+}
+.team .team_container .team_content {
+    width: 30%;
+    padding-top: 20px;
+    /* margin-left: 50px; */
+    font-size: 1.4rem;
+}
+.team .team_container .team_content p {
+    padding: 10px;
+    font-size: 15px;
+    font-family: cosmic, sans-serif;
+}
+
+/* Feed Section */
+
+.feed {
+    padding: 50px;
+    background-image: url(../assets/images/contactbg.jfif);
+    background-size: cover;
+}
+.feed h2 {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.feed .feed_form {
+    text-align: center;
+}
+.feed .feed_form form {
+    padding: 20px;
+}
+.feed .feed_form form input {
+    width: 30%;
+    margin: 10px;
+    padding: 8px;
+    outline: none;
+    border: none;
+}
+.feed .feed_form form textarea {
+    width: 30%;
+    margin: 10px;
+    padding: 8px;
+    outline: none;
+    border: none;
+}
+.feed .feed_form form button {
+    width: 30%;
+    margin: 10px;
+    padding: 8px;
+    outline: none;
+    border: none;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Page 2 - About Us */
+
+.about_us {
+    padding: 100px;
+}
+.about_us h2 {
+    color: orange;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+    font-family: cosmic, sans-serif;
+    text-transform: uppercase;
+}
+.about_us p {
+    padding: 10px;
+    font-size: 13px;
+    text-align: center;
+    font-family: cosmic, sans-serif;
+    line-height: 25px;
+}
+
+/* Contact Us */
+
+.contact_container {
+    padding: 100px;
+}
+.contact_container h2 {
+    color: orange;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+    font-family: cosmic, sans-serif;
+    text-transform: uppercase;
+}
+.contact_container .g_map {
+    border: 10px solid purple;
+}
+.contact_container .contact_content {
+    padding: 20px;
+}
+.contact_container .contact_content p {
+    padding: 10px;
+    font-size: 13px;
+    font-family: cosmic, sans-serif;
+    line-height: 25px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #99a3a4;
+    padding: 50px;
+}
+footer .pages {
+    text-align: center;
+}
+footer .pages h3 {
+    color: black;
+    font-size: 20px;
+    font-family: cosmic, sans-serif;
+    padding: 5px;
+}
+footer .pages a {
+    text-decoration: none;
+    margin: 10px;
+    color: orange;
+    font-size: 15px;
+    font-family: cosmic, sans-serif;
+}
+footer .pages a:hover {
+    color: white;
+}
+footer .doc {
+    text-align: center;
+}
+footer .doc h3 {
+    color: black;
+    font-size: 20px;
+    font-family: cosmic, sans-serif;
+    padding: 5px;
+}
+footer .doc a {
+    text-decoration: none;
+    margin: 10px;
+    color: orange;
+    font-size: 15px;
+    font-family: cosmic, sans-serif;
+}
+footer .doc a:hover {
+    color: white;
+}
+footer .social {
+    text-align: center;
+}
+footer .social h3 {
+    color: black;
+    font-size: 20px;
+    font-family: cosmic, sans-serif;
+    padding: 5px;
+}
+footer .social a {
+    text-decoration: none;
+    font-size: 30px;
+    color: orange;
+    margin: 10px;
+}
+footer .social a:hover {
+    color: white;
+}
+footer .contact {
+    text-align: center;
+}
+footer .contact h3 {
+    color: black;
+    font-size: 20px;
+    font-family: cosmic, sans-serif;
+    padding: 5px;
+}
+footer .contact a {
+    text-decoration: none;
+    font-size: 30px;
+    color: orange;
+    margin: 10px;
+}
+footer .contact a:hover {
+    color: white;
+}
+
+        
+
+    </style>
+     
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page</title>
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css"
+integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+    integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/fd52d79187.js" crossorigin="anonymous"></script>
+    <nav class="nav nav_top">
+        <div class="logo">
+            <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjS9Z2X_Jr1AhXawpYKHfH6AlsYABABGgJ0bA&ae=2&ohost=www.google.com&cid=CAESQeD2pJhz9hTHOMM2A5Tqlp-RMQYC_E6l7hbT46YEQRJ_4z6foR2VodlmNFv2w5_ywmrt9oJxRYONsGiwjRoa0gfv&sig=AOD64_044Pmnp6lp3BeMoAn7gY7kVe8fjA&q&adurl&ved=2ahUKEwjP4pWX_Jr1AhW5lFYBHUNpDeUQ0Qx6BAgCEAE"><img src="assets/images/shaya.png" alt="shaya" width="150"></a>
+           </div>
+      <div class="nav_side">
+            <a href="https://twitter.com/">About Us</a>
+            <a href="https://www.tatacliq.com/shaya-92-5-sterling-silver-antique-vakrai-earrings/p-mp000000008450542">Services</a>
+            <a href=" https://www.caratlane.com/blog/" >Blogs</a>
+            <a href="https://www.caratlane.com/" >Contact</a>
+            <a href="https://www.caratlane.com/shaya?utm_campaign=Shaya_Brand_Broad&utm_medium=CPC&utm_source=Shaya_Google&gclid=Cj0KCQiAoNWOBhCwARIsAAiHnEhYtjX9biqoDWK1R0DilvbCEuqIm8dwnAIO04iNbRmNpWMtXt23I38aAqSaEALw_wcB#">Login/Register</a>
+        </div>
+ </nav>
+    
+        <div class="main">
+            <div class="main_content">
+            <h1>    <img src="https://banner.caratlane.com/live-images/01cb56c932df4785aa037225820a6b3f.webp"></h1>
+               <h2> A woman of gift, Equally Vulnerable</h2><br>
+               <h3> A Fierce Fighter,kind at Heart </h3><br>
+               <h4> Unfettered by Rules,Embraces her Roots </h4><br>
+                    <h5>NOT EXACTLY PERFECT,BUT ONE OF A KIND</h5><img src="data:image/jpeg;base64,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" > <br>
+            
+                <div class="btn">
+                   
+                   
+                    <a href="https://www.caratlane.com/shaya/">Book Now</a>
+                </div>
+            </div>
+ </div> 
+        <div class="product">
+            <h2>OUR PRODUCTS</h2>
+            <div class="product_container">
+    
+                <div class=" silver item">
+                    <div class="silver item_img">
+                        <img src="https://banner.caratlane.com/live-images/37ff1b0a6a634ac0af4dd0b3e7353101.jpg" alt="silver items image">
+        
+                    </div>
+                    <div class="item_content">
+                        <h3>Silver Loud Laugh Necklace </h3>
+                        <p></p>
+                        <a href=" https://www.caratlane.com/shaya/owning-my-perfectionist-tendencies-necklace-in-925-silver-al00181-ss0000.html">Buy Now</a>
+
+                    </div>
+                </div>     
+                
+                <div class="item_content">
+                    <h3>Dhol Motif Single Anklet</h3>
+                    <p> Single Silver Anklet with Lapis, Synthetic Ruby Accents and Dhol-inspired motifs drawn from Rabari jewellery. Crafted in 925 Silver with an Oxidised Finish. Uniquely handcrafted, no two pieces are exactly alike!
+
+                        Weight : 10 g (approx.)
+                        
+                        Total Length: 7.5 Inches + 3.5 Inches (Adjustable) | Motif Breadth: 0.8 Inch </p>
+                    <a href="https://www.caratlane.com/shaya/dhol-motif-single-anklet-in-925-silver-ai00035-ss0000.html">Buy Now</a> 
+                </div>
+            </div>
+            <div class="product_btn">
+                   <a  target="_blank" href="https://www.caratlane.com/">Explore Our Products</a>
+                
+            </div>
+        </div>
+        <div class="Keypoints">
+            <h2>Our Key Highlights</h2>
+            <div class="key_container">
+                <div class="key_content">
+              <p>    Shop from 450+ handcrafted Silver Jewellery with prices starting from Rs. 1200. Handcrafted in 925 Silver. Exclusive Designer Jewellery Collection. Shop Now! Free Shipping. 100% Cadmium Free. Handcrafted in Jaipur. 15 Day Return & Exchange.</p>
+    </div>
+    <div class="key_img">
+        <img src="https://banner.caratlane.com/live-images/0e160a98bcd54166a60af55d8983d41b.mp4" >
+    </div>
+</div>
+</div>
+<div class="testi">
+    <h2>Our Customers</h2>
+    <div class="testi_container">
+
+        <div id="silver-example-generic" class="silver slide" data-ride="silver items ">
+             <!-- Indicators -->
+             <ol class="silver items -indicators">
+                <li data-target="#Loud Laugh Necklace " data-slide-to="0" class="active"></li>
+                <li data-target="#>Rise Above Stigma Ring" data-slide-to="1 "></li>
+                <li data-target="#Rise Above Fear Earrings" data-slide-to="2"></li>
+                <li data-target="#Dhol Motif Single Anklet" data-slide-to="3 "></li>
+            </ol>
+             <!-- Wrapper for slides -->
+             <div class="silver item" role="listbox">
+                <div class="item active">
+                    <div class="item_img">
+                        <img src="assets/images/silver.jpg" alt="...">
+                    </div>
+                    <div class="item_content">
+                        <h3>silver Items</h3>
+                        <p  href=" https://www.caratlane.com/page/offer"> </p>
+                    </div>
+                </div>
+            </div>
+              <!-- Controls -->
+              <a class="silver" href="https://www.caratlane.com/shaya/" role=" left button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="  silver " href="#https://www.caratlane.com/shaya/" role=" right button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="team">
+    <h2>OUR TEAM</h2>
+    
+    <div class="team_container">
+        <div class="team_video"> 
+           
+            <p>CaratLane -a Tanishq partnership announces its foray into silver jewellery with ‘Shaya’, a brand that is imaginative, bold, fierce and for a women of today! Shaya aims to be a brand that redefines contemporary design and turn it into wearable art. The designs are a testimonial to great craftsmanship along with a unique aesthetic.
+
+                On the thought behind the launch, Mithun Sacheti, Founder and MD, CaratLane said, “We started Shaya because we realized that there was a huge gap in the market. Although gold and silver jewellery co-exist side by side in the Indian woman’s wardrobe, most of them feel that when it comes to silver, the options are fairly generic or too expensive. It was a natural fit for us because CaratLane’s mission is to democratise jewellery, and design differentiation is core to our brand DNA’’.</p> <img src="https://banner.caratlane.com/live-images/ff18c81d729c48b68f0c59461cd3ecdf.webp" >
+            <video controls>
+                <source src="https://banner.caratlane.com/live-images/0e160a98bcd54166a60af55d8983d41b.mp4" type="video/mp4">
+            </video>
+           
+        </div>
+    </div>
+    <div class="team_content">
+        <p> This is the story of Jyoti, our most loyal customer. It's  a celebration of her and her beautiful heritage. </p>
+        <p> Born and raised in the city of jaipur, Jyoti is the eldest of 3 siblibgs.
+            She grew up loving Jane Austen novels, and always knew that she wanted to teach-just like her mom.
+            An English professor by day, she is also pursuing the art of making the perfect sourdough and fine-tuning her storytelling skills. </p>
+    </div>
+</div>
+</div>
+<div class="feed">
+    
+    <h2>Write a review</h2>
+    <div class="feed_form">
+        <form name="submit-googlesheet">
+            <input type="text" name="Name" placeholder="Name"><br>
+            <input type="email" name="Email" placeholder="Email ID"><br>
+            <input type="number" name="Number" placeholder="Contact Number"><br>
+            <textarea name="" cols="7" rows="5" name="Review" placeholder="Write your review"></textarea><br>
+            <button type="submit"
+                onclick="alert('Thanks for contacting us! We will get in touch with you soon!');">Submit</button>
+        </form>
+    </div>
+</div>
+<footer>
+    <div class="footer_logo">
+        <a href="index.html"><img src="https://www.caratlane.com/shaya/"><img src="assets/images/shaya.png" alt="shaya" width="150"></a>
+    </div>
+    <div class="pages">
+        <h3>Pages</h3>
+        <a href="https://twitter.com/">About Us</a>
+            <a href="https://www.tatacliq.com/shaya-92-5-sterling-silver-antique-vakrai-earrings/p-mp000000008450542">Services</a>
+            <a href=" https://www.caratlane.com/blog/" >Blogs</a>
+            <a href="https://www.caratlane.com/" >Contact</a>
+            <a href="https://www.caratlane.com/shaya?utm_campaign=Shaya_Brand_Broad&utm_medium=CPC&utm_source=Shaya_Google&gclid=Cj0KCQiAoNWOBhCwARIsAAiHnEhYtjX9biqoDWK1R0DilvbCEuqIm8dwnAIO04iNbRmNpWMtXt23I38aAqSaEALw_wcB#">Login/Register</a>
+    </div>
+    <div class="doc">
+        <h3>Documents</h3>
+        <a href="https://www.caratlane.com/privacy-policy">Privacy Policy</a>
+        <a href="https://www.caratlane.com/terms-and-conditions">Terms of Use</a>
+        <a href="https://www.caratlane.com/myaccount/orders?tab=myorders">Refund Policy</a>
+    </div>
+    <div class="social">
+        <h3>Follow Us</h3>
+        <a href="https://www.facebook.com/HeyShaya/ ">shaya-facebook</a>
+        <a href="https://api.whatsapp.com" target="silver items"> shaya-whatsapp</a>
+        <a href="https://www.instagram.com/shayagrams/" >shayagrams-instagram</a>
+         <!-- <a href="https://twitter.com/caratlane/status/1044884696386002944"><i class="shaya -twitter"></i></a> -->
+        </div>
+    </div>
+    <div class="contact">
+        <h3>Contact Us</h3>
+        <a href="https://api.whatsapp.com">shaya-whatsapp</a>
+        <a href="tel: +91-44-66075200 ">shaya-phone</a>
+        <a href="mailto: customercare@shoppersstop.com">shaya-envelope</a>
+    </div>
+    <hr>
+    <p>Copyright &copy; 2021 CARATLANE / SHAYA. All rights reserved</p>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+const scriptURL = 'https://docs.google.com/spreadsheets/d/1QyM175KqKsQSN_UemNGiyi4Hmnr3iDx-99o7NYESWYs/edit#gid=0'
+const form = document.forms['submit-googlesheet']
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+})
+</script>
+</body>
+</html>
